@@ -12,7 +12,6 @@ function App() {
   const [page, setPage] = useState(1); // Permet de gérer la pagination
 
   return (
-    // Mise en place de la navigation
     <Router>
       <Header
         refresh={refresh}
