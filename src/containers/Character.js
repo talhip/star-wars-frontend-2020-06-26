@@ -18,7 +18,7 @@ const Character = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`//swapi.dev/api/people/${id}`);
+        const response = await axios.get(`https://swapi.dev/api/people/${id}`);
         setData(response.data);
         setIsLoading(false);
       } catch (error) {
