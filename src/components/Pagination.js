@@ -8,7 +8,7 @@ const Pagination = ({ page, setPage, data }) => {
           &lt;&nbsp;
         </span>
       )}
-      {/* Indique la page actuelle */}
+      {/* Donne la page actuelle */}
       <span>{page}</span>
       {data.next !== null && (
         <span className="pointer" onClick={() => setPage(page + 1)}>
