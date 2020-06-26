@@ -11,7 +11,9 @@ const StarshipPerCharacter = ({ starship, index }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`${starship}`);
+        const response = await axios.get(
+          `https://swapi.dev/api/starships/${starship.slice(31)}`
+        );
         setData(response.data);
         setIsLoading(false);
       } catch (error) {

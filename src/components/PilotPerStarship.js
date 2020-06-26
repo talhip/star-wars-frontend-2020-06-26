@@ -11,7 +11,9 @@ const PilotPerStarship = ({ pilot, index }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`${pilot}`);
+        const response = await axios.get(
+          `https://swapi.dev/api/people/${pilot.slice(28)}`
+        );
         setData(response.data);
         setIsLoading(false);
       } catch (error) {
